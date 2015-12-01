@@ -1,3 +1,9 @@
-window.Hanoi = {};
-Hanoi.View = require('./hanoi-view.js');
-Hanoi.Game = require('../../hanoi-core-solution/src/game.js');
+var HanoiView = require('./hanoi-view.js');
+var HanoiGame = require('../../hanoi-core-solution/src/game.js');
+
+$(function () {
+  var rootEl = $(".hanoi");
+  var game = new HanoiGame();
+  new HanoiView(game, $(".hanoi"));
+});
+
