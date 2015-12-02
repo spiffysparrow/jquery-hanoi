@@ -3,6 +3,7 @@ module.exports = {
   entry: ,
   output: {
     path: ,
+    publicPath: ,
     filename:
   }
 };
